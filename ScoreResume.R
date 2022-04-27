@@ -6,7 +6,7 @@ library("text2vec")
 library("readxl")
 
 #import occupation data
-occupation <- read.csv(file = "Occupation_Data.csv")
+#occupation <- read.csv(file = "Occupation_Data.csv")
 
 
 # data cleaning function
@@ -35,7 +35,7 @@ prep_fun <- function(x) {
   
 scoreResult <- function(resumepath, occupation=NA) {
     if ( is.na(occupation) ) {
-        occupation <- read_excel("Occupation_Data.xlsx", col_names = c("title", "description"), skip = 1)
+        occupation <- read_csv("Occupation_Data.csv", col_names = c("title", "description"), skip = 1)
     }
     resume = read_file(resumepath)
     # make resume content a dataframe
