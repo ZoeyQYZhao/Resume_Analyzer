@@ -1,10 +1,10 @@
-list.of.packages <- c("shiny", "shinyjs", "shinyFiles", "fs", "knitr", "shinythemes", "htmlwidgets", "DT",
-                      "rjson", "xlsx", "tidytext", "kableExtra", "rmdformats", "magrittr", "tinytex", "rvest",
-                      "rmarkdown", "rsconnect", "tidyverse", "writexl", "dplyr", "text2vec", "readr",
-                      "stringr", "stopwords", "textstem", "tm", "NLP", "quanteda", "corpus", "tibble",
-                      "gsubfn", "plotly", "textrank", "udpipe", "xtable", "xml2", "readxl", "shinyWidgets")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[, "Package"])]
-if (length(new.packages)) install.packages(new.packages)
+# list.of.packages <- c("shiny", "shinyjs", "shinyFiles", "fs", "knitr", "shinythemes", "htmlwidgets", "DT",
+#                       "rjson", "xlsx", "tidytext", "kableExtra", "rmdformats", "magrittr", "tinytex", "rvest",
+#                       "rmarkdown", "rsconnect", "tidyverse", "writexl", "dplyr", "text2vec", "readr",
+#                       "stringr", "stopwords", "textstem", "tm", "NLP", "quanteda", "corpus", "tibble",
+#                       "gsubfn", "plotly", "textrank", "udpipe", "xtable", "xml2", "readxl", "shinyWidgets")
+# new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[, "Package"])]
+# if (length(new.packages)) install.packages(new.packages)
 
 # # prepare environments
 library("shinyWidgets")
