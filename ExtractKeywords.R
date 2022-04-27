@@ -1,5 +1,5 @@
 
-
+library(udpipe)
 #function to extract keywords
 ud_model <- udpipe_download_model(language = "english")
 ud_model <- udpipe_load_model(ud_model$file_model)
