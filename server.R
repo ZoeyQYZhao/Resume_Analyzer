@@ -1,5 +1,7 @@
 library(shinyWidgets)
 
+
+
 shinyServer <- function(input, output, session) {
     # analysis resume and occupation
     restab <- eventReactive(input$go, {
